@@ -24,7 +24,10 @@ public class HelloWorld {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello World Arès, cv ? ");
+        /*System.out.println("Hello World Arès, cv ? ");*/
+        System.out.println("Message : Ligne 1");
+        System.out.println("Message : Ligne 2");
+        
     }
     
 }
