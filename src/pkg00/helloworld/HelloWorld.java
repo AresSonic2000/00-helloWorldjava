@@ -49,6 +49,7 @@ public class HelloWorld {
         System.out.println("Valeur de y apres l'echange :" + y);
         */
         //Exercice 5
+        /*
         int a, b, r;
         Scanner sc = new Scanner(System.in);
         System.out.println("Entre la valeur de a :");
@@ -57,7 +58,17 @@ public class HelloWorld {
         b = sc.nextInt();
         r = (a + b)*2;
         System.out.println("Resultat : " + r);
+        */
+        //Exercice mot de passe
+        String a ,mdp ="admin123";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Mot de passe : ");
+        a = sc.next();
+        while (!a.equals(mdp)) {
+            System.out.print("Mot de passe : ");
+            a = sc.next();
+        }
         
-    }
+    };
     
-}
+};
