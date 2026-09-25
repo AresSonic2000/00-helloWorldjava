@@ -32,6 +32,8 @@ public class HelloWorld {
         System.out.println("Message : Ligne 1");
         System.out.println("Message : Ligne 2");
         */
+        /*
+        //Exercice 4
         int x, y, tmp;
         Scanner sc = new Scanner(System.in);
         System.out.println("Entre la valeur de x :");
@@ -45,6 +47,17 @@ public class HelloWorld {
         y = tmp;
         System.out.println("Valeur de x apres l'echange :" + x);
         System.out.println("Valeur de y apres l'echange :" + y);
+        */
+        //Exercice 5
+        int a, b, r;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Entre la valeur de a :");
+        a = sc.nextInt();
+        System.out.println("Entre la valeur de b :");
+        b = sc.nextInt();
+        r = (a + b)*2;
+        System.out.println("Resultat : " + r);
+        
     }
     
 }
