@@ -12,7 +12,7 @@
  */
 
 package pkg00.helloworld;
-import java.util.Scanner;
+
 /**
  * Classe principale contenant la méthode main.
  * 
@@ -60,6 +60,7 @@ public class HelloWorld {
         System.out.println("Resultat : " + r);
         */
         //Exercice mot de passe
+        /*
         String a ,mdp ="admin123";
         Scanner sc = new Scanner(System.in);
         System.out.print("Mot de passe : ");
@@ -68,6 +69,12 @@ public class HelloWorld {
             System.out.print("Mot de passe : ");
             a = sc.next();
         }
+        */
+       //Exercice 7 : Jeux de devinette de nombre
+       System.out.println("--Jeux de devinette de nombre--");
+       int n = (int)(Math.random()*100);
+       
+
         
     };
     
