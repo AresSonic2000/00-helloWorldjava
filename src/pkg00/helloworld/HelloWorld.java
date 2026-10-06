@@ -71,8 +71,10 @@ public class HelloWorld {
         }
         */
        //Exercice 7 : Jeux de devinette de nombre
+       Scanner sc = new Scanner(System.in);
        System.out.println("--Jeux de devinette de nombre--");
        int n = (int)(Math.random()*100);
+
        
 
         
