@@ -12,12 +12,12 @@
  */
 
 package pkg00.helloworld;
-
 /**
  * Classe principale contenant la méthode main.
  * 
  * @author abreilletkerforn
  */
+import java.util.Scanner;
 public class HelloWorld {
 
     /**
@@ -68,16 +68,80 @@ public class HelloWorld {
         while (!a.equals(mdp)) {
             System.out.print("Mot de passe : ");
             a = sc.next();
-        }
         */
-       //Exercice 7 : Jeux de devinette de nombre
+        //Exercice Menu interactif
+        /*
+        Scanner sc = new Scanner(System.in);
+        int e = 0;
+        do {
+        System.out.print("--Menu interactif--\n");
+        System.out.print("1 : Afficher 'Bonjour'\n");
+        System.out.print("2 : Afficher 'Au revoir'\n");
+        System.out.print("0 : Quitter\n");
+        System.out.print("--Choisie une option--\n");
+        e = sc.nextInt();
+        if (e==1){
+System.out.print("Bonjour\n");
+        }
+        else if (e==2){
+System.out.print("Au revoir\n");
+        }
+        }
+        while (e>0 || e<0);
+        */
+       //Exercice calcule de note
+       /*
+        Scanner sc = new Scanner(System.in);
+        float e = 0, s = 0, m = 0;
+        int c = 0;
+            System.out.print("--Calcule de note--\n");
+            c++;
+            System.out.print("Saisir note " + c + ": ");
+            e = sc.nextInt();
+         while (e != -1) {
+            s+=e;
+            m = s/c;
+            c++;
+            System.out.print("Saisir note " + c + ": ");
+            e = sc.nextInt();
+         }
+        System.out.print("Somme des notes : " + s + "\n");
+        System.out.print("Moyenne des notes : " + m + "\n");
+        */
        Scanner sc = new Scanner(System.in);
-       System.out.println("--Jeux de devinette de nombre--");
-       int n = (int)(Math.random()*100);
+       int V_r = (int)(Math.random() * 100)+1, e = -1, c = 0;
+       System.out.print("--- Devine un nombre ENTIER entre 0 et 100 en 10 tentavives ---\n");
+       while (c<10 && e!=V_r) {
+        System.out.print("\nSaisir un nombre ENTIER entre 0 et 100 : ");
+        e = sc.nextInt();
+        while (e<0 || e>100){
+        System.out.print("Saisir un nombre ENTIER entre 0 et 100 : ");
+        e = sc.nextInt();
+        }
+        if (e>V_r){
+            System.out.print("\nTrop grand !\n");
+        }
+        else if (e<V_r){
+            System.out.print("\nTrop petit !\n");
+        }
+        c++;
+        System.out.print("Nombre de tentative faite : "+ c +"\n");
+       }
+       if (c==1){
+        System.out.print("Vous avez deviner le nombre en "+ c +" tentative, vous trichez ou vous avez une voyance paranormale sinon jouer au loto !!");
+       }
+       else if(c>1 && c<=5){
+        System.out.print("Felicitations, vous avez deviner le nombre en "+ c +" tentatives !!");
+       }
+       else if(c>=6 && c<=9){
+       System.out.print("Pas mal, vous avez deviner le nombre en "+ c +" tentatives !!");
+       }
+       else if (c==10 && e==V_r){
+       System.out.print("Juste, vous avez deviner le nombre en "+ c +" tentatives !");
+       }
+       else {
+        System.out.print("\nTu es un gros nul, deviner le nombre en 10 tentatives est pourtant simple XD\n");
+        System.out.print("Le nombre a deviner est : "+ V_r +"\n");
+       }
+    }}
 
-       
-
-        
-    };
-    
-};
